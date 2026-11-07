@@ -17,5 +17,8 @@ spec:
   # Default: manueller Sync (kein Self-Heal/Prune).
   # Sync-Policy und ignoreDifferences werden im Arbeitsblatt konfiguriert.
   syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
     syncOptions:
-      - CreateNamespace=true
+    - CreateNamespace=true
